@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+      <title>Simple app</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js">
+      </script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+
+
+  <body ng-controller="MyCtrl">
+
+
+    <div>
+      <div>First name: {{person.firstName}}</div>
+      <div>Last name: {{person.lastName}}</div>
+      <div>
+        <img ng-src="{{person.imgSrc}}" title="{{person.firstName}} {{person.lastName}}">
+      </div>
+    </div>
+
+
+  </body>
+</html>
